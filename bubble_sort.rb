@@ -6,9 +6,7 @@ def bubble_sort(arr)
 
 		arr.length.times do |index|
 			if index < arr.length-1 && arr[index] > arr[index+1]
-				 temp = arr[index]
-				 arr[index] = arr[index+1]
-				 arr[index+1] = temp
+				 arr[index], arr[index+1] = arr[index+1], arr[index]
 				 did_sort = true
 			end
 		end
